@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e6f2ff;
+    margin: 0;
+    padding: 0;
+    color: #1a3d6d; /* Dark blue text */
+  }
+  
+  header {
+    background-color: #007bff; /* Blue header background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #0056b3; /* Darker blue for nav */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .card {
+    background-color: #f0f8ff; /* Lighter blue card background */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Gallery Styles */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Section */
+  .video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  /* Add a background image to the entire page */
+body {
+  background-image: url('../images/rory-background.jpg');  /* Replace with your image path */
+  background-size: cover;  /* Makes sure the image covers the whole page */
+  background-position: center center;  /* Centers the background image */
+  background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+  color: #fff;  /* Adjust text color for readability */
+}
+
+/* Optionally, you can add a slight overlay to make text more readable */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);  /* Dark overlay */
+  z-index: -1;  /* Ensures the overlay stays behind the content */
+}
